@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: system-ui;
+  background: black;
+}
+header {
+  height: 100px;
+}
+img {
+  padding: 14px;
+}
+nav {
+  width: 1233px;
+  margin-left: 99px;
+  margin-top: -70px;
+  margin-right: 2px;
+  padding-top: 10px;
+}
+.sidepanel a {
+  list-style-type: none;
+  padding: 15px 16px;
+  font-size: 20px;
+  color: #f5c701;
+  float: right;
+  border-radius: 10px;
+}
+.sidepanel a {
+  text-decoration: none;
+}
+.sidepanel:hover {
+  background-color: #b7ad80b8;
+}
+.active {
+  background-color: #7c744db8;
+}
+.sec1 {
+  height: 560px;
+}
+.assign {
+  color: #f5c701;
+  text-align: center;
+  padding-top: 50px;
+}
+.butonat {
+  padding-left: 50px;
+}
+.dropbtn {
+  background-color: #4c4c4c;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding-top: 40px;
+  padding-left: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #c0c0c0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #2e2e2e;
+}
+footer {
+  height: 200px;
+  padding-top: 5%;
+  text-align: center;
+  background: #f5c701;
+}
+.icons {
+  padding-top: 35px;
+}
+.icons a{
+  padding: 35px;
+  color: black;
+  font-size: 18px;
+}
+.openbtn,
+.closebtn {
+  display: none;
+}
+
+/* Responsive Line */
+
+@media only screen and (max-device-width: 414px) {
+  nav {
+    width: 100px;
+  }
+  .sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 250px;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    float: none;
+  }
+  
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 0;
+    margin-left: 170px;
+    border: none;
+    display: block;
+  }
+  .closebtn {
+    margin-top: 18px;
+  }
+  
+  .openbtn:hover {
+    background-color:#444;
+  }
+  .icons a {
+    padding: 80px;
+  }
+  footer {
+    height: 230px;
+  }
+
+}

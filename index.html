@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="Images/logo.png">
+  </head>
+  <body>
+    <header>
+      <img src="Images/logo.png" alt="Logo" height="70px" width="70px" class="logo"/>
+      <nav class="navbar">
+        <button class="openbtn" onclick="openNav()">☰</button>
+        <div id="mySidepanel" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="contact.html">Contact</a>
+          <a href="grades.html">Grades</a>
+          <a href="assignments.html">Assignments</a>
+          <a href="about.html">About</a>
+          <a href="index.html" class="active">Home</a>
+        </div>
+      </nav>
+    </header>
+    <section class="sec1">
+      <center>
+      <h1 style="font-size: 40px; color: #ffffff;">Hi, I am Lirim</h1>
+      <p style="color: #f5c701;">a web developer</p>
+      </center>
+    </section>
+    <time>22/11/2021</time>
+    <footer>
+      <h1>Let's work together</h1>
+      <div class="icons">
+        <a href="https://www.facebook.com/lirim.av" target="_blank"><i class="fa fa-facebook">Facebook</i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram">Instagram</i></a>
+        <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter">Twitter</i></a>
+        <a href="mailto:la60874@universum-ks.org"><i class="fa fa-envelope">Email</i></a>
+      </div>
+    </footer>
+
+    <!-- Hamburger Menu Script -->
+    <script>
+      function openNav() {
+        document.getElementById("mySidepanel").style.width = "414px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+      }
+      </script>
+  </body>
+</html>

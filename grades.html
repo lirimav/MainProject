@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/grades.css">
+    <link rel="icon" type="image/x-icon" href="Images/logo.png">
+    <title>Grades</title>
+<body>
+    <header>
+        <img src="Images/logo.png" alt="Logo" height="70px" width="70px"/>
+        <nav class="navbar">
+          <button class="openbtn" onclick="openNav()">☰</button>
+          <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="contact.html">Contact</a>
+            <a href="grades.html" class="active">Grades</a>
+            <a href="assignments.html">Assignments</a>
+            <a href="about.html">About</a>
+            <a href="index.html">Home</a>
+          </div>
+        </nav>
+      </header>
+      <section class="sec1">
+          <h1 class="mainh">First year grades</h1>
+          <table>
+            <tbody>
+            <tr>
+              <td>Semestri</td>
+              <td>Lenda</td>
+              <td>Nota</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Hyrje Ne Web Programim</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>Teoria e Qarqeve</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>Matematike</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>Pre Intermediate 1</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>Etika dhe Teknologjia</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>Shkathtesi Studimi</td>
+              <td>&nbsp;</td>
+            </tr>
+            </tbody>
+            </table>
+      </section>
+      <footer>
+        <div class="icons">
+          <a href="https://www.facebook.com/lirim.av" target="_blank"><i class="fa fa-facebook">Facebook</i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram">Instagram</i></a>
+          <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter">Twitter</i></a>
+          <a href="mailto:la60874@universum-ks.org"><i class="fa fa-envelope">Email</i></a>
+      </div>
+      </footer>
+      <script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "414px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+        </script>
+</body>
+</html>
