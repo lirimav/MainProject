@@ -66,6 +66,10 @@
     color: black;
     font-size: 18px;
   }
+  .openbtn,
+  .closebtn {
+    display: none;
+  }
 
   /* Responsive Line */
 
