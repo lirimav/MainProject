@@ -162,9 +162,11 @@ footer {
   .closebtn {
     margin-top: 18px;
   }
-  
   .openbtn:hover {
     background-color:#444;
+  }
+  .dropdown {
+    padding-left: 0;
   }
   .icons a {
     padding: 80px;
