@@ -108,7 +108,7 @@
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
+    font-size: 27px;
   }
   
   .openbtn {
@@ -137,6 +137,9 @@
   .openbtn:hover {
     background-color:#444;
   }
+  .active {
+    background-color: #998317cf;
+   }
   .sec1 {
     height: 780px;
   }
