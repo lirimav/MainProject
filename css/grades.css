@@ -94,7 +94,7 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #999999;
     display: block;
     transition: 0.3s;
     float: none;
@@ -121,6 +121,14 @@
     margin: 0;
     border: none;
     display: block;
+  }
+  .openbtn:hover {
+    transform: rotate(90deg);
+    transition: transform 0.4s;
+  }
+  .closebtn:hover {
+    transform: rotate(90deg);
+    transition: transform 1s;
   }
   .closebtn {
     margin-top: 18px;
