@@ -10,7 +10,7 @@ header {
   height: 100px;
 }
 .logo {
-  padding: 14px;
+  padding: 30px;
 }
 nav {
   width: 1233px;
@@ -65,10 +65,16 @@ time {
 /* Responsive Line */
 
 @media only screen and (max-device-width: 1024px) {
+  
+  .logo {
+    float: left;
+  }
   nav {
     width: 65%;
+    margin: 0;
+    padding: 0;
   }
-  .sidepanel {
+  .sidepanel  {
     width: 0;
     position: fixed;
     z-index: 1;
@@ -80,30 +86,28 @@ time {
     transition: 0.5s;
     padding-top: 60px;
   }
-  .sidepanel:hover {
-    background-color: #000000;
-  }
+  
   .sidepanel a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #bfbfbf;
+    color: #999999;
     display: block;
     transition: 0.3s;
     float: none;
   }
-
+  
   .sidepanel a:hover {
     color: white;
   }
-
+  
   .sidepanel .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 27px;
   }
-
+  
   .openbtn {
     font-size: 30px;
     cursor: pointer;
@@ -111,7 +115,7 @@ time {
     color: white;
     padding: 0;
     float: right;
-    margin: 0;
+    margin: 16.5% -30% 0 0;
     border: none;
     display: block;
   }
@@ -127,10 +131,10 @@ time {
     transition: transform 1s;
   }
   .openbtn:hover {
-    background-color: #1111;
+    background-color:#1111;
   }
   .active {
-    background-color: #9b7e00;
+   background-color: #998317cf;
   }
   .icons a {
     padding: 80px;
@@ -139,7 +143,7 @@ time {
     height: 260px;
   }
 }
-@media (min-device-width: 1024px) {
+@media (min-device-width: 1025px) {
   nav {
     width: 90%;
     margin-left: 0;
