@@ -64,7 +64,7 @@ time {
 
 /* Responsive Line */
 
-@media only screen and (max-device-width: 414px) {
+@media only screen and (max-device-width: 1024px) {
   nav {
     width: 65%;
   }
@@ -135,5 +135,16 @@ time {
   }
   footer {
     height: 260px;
+  }
+}
+@media (min-device-width: 1024px) {
+  nav {
+    width: 90%;
+    margin-left: 0;
+    padding-left: 10%;
+  }
+  .icons {
+    margin: 0;
+    
   }
 }
