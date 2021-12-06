@@ -97,12 +97,12 @@ footer {
   background: #f5c701;
 }
 .icons {
-  padding-top: 35px;
+  padding-top: 4%;
 }
 .icons a {
-  padding: 35px;
+  padding: 3%;
   color: black;
-  font-size: 18px;
+  font-size: 1.1em;
 }
 .openbtn,
 .closebtn {
@@ -184,14 +184,19 @@ footer {
   .active {
     background-color: #998317cf;
   }
+  .sec1 {
+    height: 660px;
+  }
   .dropdown {
     padding-left: 0;
   }
   .icons a {
-    padding: 80px;
+    padding: 1.5%;
+    display: grid;
+    text-decoration: none;
   }
   footer {
-    height: 230px;
+    height: 260px;
   }
 }
 
