@@ -45,7 +45,9 @@ nav {
   padding-top: 50px;
   padding-bottom: 65px;
 }
-table,tr,td {
+table,
+tr,
+td {
   color: white;
   border: 1px solid #f5c701;
 }
@@ -61,7 +63,7 @@ footer {
 .icons {
   padding-top: 35px;
 }
-.icons a{
+.icons a {
   padding: 35px;
   color: black;
   font-size: 18px;
@@ -74,92 +76,93 @@ footer {
 /* Responsive Line */
 
 @media only screen and (max-device-width: 1024px) {
-nav {
-  width: 65%;
-}
-.sidepanel  {
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  height: 250px;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
+  nav {
+    width: 65%;
+  }
+  .sidepanel {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 250px;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
 
-.sidepanel a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #999999;
-  display: block;
-  transition: 0.3s;
-  float: none;
-}
+  .sidepanel:hover {
+    background-color: #000000;
+  }
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #bfbfbf;
+    display: block;
+    transition: 0.3s;
+    float: none;
+  }
 
-.sidepanel a:hover {
-  color: #f1f1f1;
-}
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
 
-.sidepanel .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 27px;
-}
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 27px;
+  }
 
-.openbtn {
-  font-size: 30px;
-  cursor: pointer;
-  background-color: #1111;
-  color: white;
-  padding: 0;
-  float: right;
-  margin: 0;
-  border: none;
-  display: block;
-}
-.openbtn:hover {
-  transform: rotate(90deg);
-  transition: transform 0.4s;
-}
-.closebtn:hover {
-  transform: rotate(90deg);
-  transition: transform 1s;
-}
-.closebtn {
-  margin-top: 18px;
-}
+  .openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #1111;
+    color: white;
+    padding: 0;
+    float: right;
+    margin: 0;
+    border: none;
+    display: block;
+  }
+  .openbtn:hover {
+    transform: rotate(90deg);
+    transition: transform 0.4s;
+  }
+  .closebtn:hover {
+    transform: rotate(90deg);
+    transition: transform 1s;
+  }
+  .closebtn {
+    margin-top: 18px;
+  }
 
-.openbtn:hover {
-  background-color:#444;
-}
-.active {
-  background-color: #998317cf;
- }
-.sec1 {
-  height: 780px;
-}
-.icons a {
-  padding: 80px;
-}
-footer {
-  height: 260px;
-}
+  .openbtn:hover {
+    background-color: #444;
+  }
+  .active {
+    background-color: #998317cf;
+  }
+  .sec1 {
+    height: 780px;
+  }
+  .icons a {
+    padding: 80px;
+  }
+  footer {
+    height: 260px;
+  }
 }
 
 @media (min-device-width: 1024px) {
-nav {
-  width: 90%;
-  margin-left: 0;
-  padding-left: 10%;
-}
-.icons {
-  margin: 0;
-  
-}
-
+  nav {
+    width: 90%;
+    margin-left: 0;
+    padding-left: 10%;
+  }
+  .icons {
+    margin: 0;
+  }
 }

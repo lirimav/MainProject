@@ -77,14 +77,14 @@ footer {
 .icons {
   padding-top: 35px;
 }
-.icons a{
+.icons a {
   padding: 35px;
   color: black;
   font-size: 18px;
 }
 .openbtn,
 .closebtn {
-display: none;
+  display: none;
 }
 
 /* Responsive Line */
@@ -93,7 +93,7 @@ display: none;
   nav {
     width: 65%;
   }
-  .sidepanel  {
+  .sidepanel {
     width: 0;
     position: fixed;
     z-index: 1;
@@ -105,31 +105,32 @@ display: none;
     transition: 0.5s;
     padding-top: 60px;
   }
+
   .sidepanel:hover {
-    background-color: black;
+    background-color: #000000;
   }
-  
+
   .sidepanel a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #999999;
+    color: #bfbfbf;
     display: block;
     transition: 0.3s;
     float: none;
   }
-  
+
   .sidepanel a:hover {
     color: #f1f1f1;
   }
-  
+
   .sidepanel .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 27px;
   }
-  
+
   .openbtn {
     font-size: 30px;
     cursor: pointer;
@@ -153,12 +154,12 @@ display: none;
     margin-top: 18px;
   }
   .openbtn:hover {
-    background-color:#444;
+    background-color: #444;
   }
   .active {
     background-color: #998317cf;
-   }
-  
+  }
+
   .img {
     float: none;
     padding-left: 0;
@@ -166,7 +167,7 @@ display: none;
   .profili {
     padding-top: 5%;
     float: none;
-  } 
+  }
   .textdiv {
     float: none;
     padding-right: 0;
@@ -195,7 +196,5 @@ display: none;
   }
   .icons {
     margin: 0;
-    
   }
-  
 }

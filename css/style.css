@@ -68,7 +68,7 @@ time {
   nav {
     width: 65%;
   }
-  .sidepanel  {
+  .sidepanel {
     width: 0;
     position: fixed;
     z-index: 1;
@@ -80,28 +80,30 @@ time {
     transition: 0.5s;
     padding-top: 60px;
   }
-  
+  .sidepanel:hover {
+    background-color: #000000;
+  }
   .sidepanel a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #999999;
+    color: #bfbfbf;
     display: block;
     transition: 0.3s;
     float: none;
   }
-  
+
   .sidepanel a:hover {
     color: white;
   }
-  
+
   .sidepanel .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 27px;
   }
-  
+
   .openbtn {
     font-size: 30px;
     cursor: pointer;
@@ -125,10 +127,10 @@ time {
     transition: transform 1s;
   }
   .openbtn:hover {
-    background-color:#1111;
+    background-color: #1111;
   }
   .active {
-   background-color: #998317cf;
+    background-color: #9b7e00;
   }
   .icons a {
     padding: 80px;
@@ -145,6 +147,5 @@ time {
   }
   .icons {
     margin: 0;
-    
   }
 }
