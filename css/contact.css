@@ -52,12 +52,17 @@ form {
 input {
   padding: 1%;
   width: 40%;
+  border-radius: 1em;
+  border: none;
 }
 label {
   font-size: 20px;
 }
 textarea {
-  width: 45%;
+  width: 42%;
+  border-radius: 5px;
+  border: none;
+  padding: 1%;
 }
 .submit {
   font-size: 17px;
@@ -71,6 +76,7 @@ footer {
   padding-top: 5%;
   text-align: center;
   background: #f5c701;
+  border-radius: 20px 20px 0 0;
 }
 .icons {
   padding-top: 4%;
@@ -177,7 +183,7 @@ footer {
     width: 90%;
   }
   textarea {
-    width: 90%;
+    width: 88%;
   }
   .labelfl {
     padding: 0;

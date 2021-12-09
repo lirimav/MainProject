@@ -12,6 +12,7 @@ header {
 .logo {
   padding: 30px;
 }
+/* navbar */
 nav {
   width: 1233px;
   margin-left: 99px;
@@ -45,6 +46,7 @@ footer {
   padding-top: 5%;
   text-align: center;
   background: #f5c701;
+  border-radius: 20px 20px 0 0;
 }
 .icons {
   padding-top: 4%;
@@ -74,7 +76,7 @@ time {
     margin: 0;
     padding: 0;
   }
-  .sidepanel  {
+  .sidepanel {
     width: 0;
     position: fixed;
     z-index: 1;
@@ -86,19 +88,23 @@ time {
     transition: 0.5s;
     padding-top: 60px;
   }
-  
+
+  .sidepanel:hover {
+    background-color: #000000;
+  }
+
   .sidepanel a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #999999;
+    color: #bfbfbf;
     display: block;
     transition: 0.3s;
     float: none;
   }
-  
+
   .sidepanel a:hover {
-    color: white;
+    color: #f1f1f1;
   }
   
   .sidepanel .closebtn {
