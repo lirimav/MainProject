@@ -68,7 +68,6 @@ time {
 /* Responsive Line */
 
 @media only screen and (max-device-width: 1024px) {
-  
   .logo {
     float: left;
   }
@@ -107,14 +106,14 @@ time {
   .sidepanel a:hover {
     color: #f1f1f1;
   }
-  
+
   .sidepanel .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 27px;
   }
-  
+
   .openbtn {
     font-size: 30px;
     cursor: pointer;
@@ -138,10 +137,10 @@ time {
     transition: transform 1s;
   }
   .openbtn:hover {
-    background-color:#1111;
+    background-color: #1111;
   }
   .active {
-   background-color: #998317cf;
+    background-color: #998317cf;
   }
   .sec1 {
     height: 470px;

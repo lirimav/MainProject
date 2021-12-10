@@ -1,0 +1,54 @@
+<!-- \\\\ Lirim Avdyli //// -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- \\\\ Lirim Avdyli //// -->
+    <title>chapter 9</title>
+    <style>
+        p {margin: 0;}
+        p.space {margin-top: 10px;}
+    </style>
+    <script>
+        var output;
+        var x=1;
+
+        function start() {
+            var x=5; 
+
+            output= "<p>local x in start is "+ x +"</p>";
+
+            functionA();
+            functionB();
+            functionA();
+            functionB();
+
+            output +="<p class='space'>local x in start is "+ x +"</p>";
+            document.getElementById("results").innerHTML= output;
+        }
+
+        function functionA(){
+            var x=25;
+
+            output += "<p class='space'>local x in functionA is "+ x +"after entering functionA</p>"
+            ++x;
+            output +="<p>local x in functionA is "+ x +" before exiting functionA</p>";
+        }
+
+        function functionB(){
+            var x=25;
+
+            output += "<p class='space'>global variable is "+ x +" on entering functionB</p>"
+            x *= 10;
+            output +="<p>global variable is "+ x +" on exiting functionB</p>";
+        }
+
+        window.addEventListener("load", start, false);
+    </script>
+</head>
+<body>
+    <div id="results"></div>
+</body>
+</html>

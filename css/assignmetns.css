@@ -50,10 +50,11 @@ nav {
   float: left;
 }
 .dropbtn {
-  background-color: #4c4c4c;
-  color: white;
+  background-color: #f5c701;
+  color: #000000d1;
   padding: 16px;
   font-size: 16px;
+  font-weight: 550;
   border: none;
   cursor: pointer;
   border-radius: 10px;
@@ -69,21 +70,23 @@ nav {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #3e3e3e;
+  border-radius: 5px;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
+  color: #f5c701;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  text-align: left;
 }
 
 .dropdown-content a:hover {
-  background-color: #c0c0c0;
+  background-color: #272727;
 }
 
 .dropdown:hover .dropdown-content {
@@ -91,12 +94,13 @@ nav {
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #2e2e2e;
+  background-color: black;
+  color: #f5c701;
 }
 .h3 {
   background-image: url("../Images/program.jpg");
-  background-size: cover; 
-  width: 50%; 
+  background-size: cover;
+  width: 50%;
   height: 370px;
   color: #f5c701e6;
   float: right;
@@ -106,7 +110,7 @@ nav {
 h3 {
   text-align: center;
   padding: 22% 0 0 0;
-  font-family: 'Architects Daughter', cursive;
+  font-family: "Architects Daughter", cursive;
   font-size: 1.7em;
 }
 footer {
@@ -145,17 +149,35 @@ footer {
   padding: 4px;
   background: rgba(0, 0, 0, 0.25);
   border-radius: 6px;
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25),
+    0 1px rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25),
+    0 1px rgba(255, 255, 255, 0.08);
 }
 
 .progress-bar {
   height: 16px;
   border-radius: 4px;
-	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
-  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.05)
+  );
+  background-image: -moz-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.05)
+  );
+  background-image: -o-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.05)
+  );
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.05)
+  );
   -webkit-transition: 0.4s linear;
   -moz-transition: 0.4s linear;
   -o-transition: 0.4s linear;
@@ -164,8 +186,10 @@ footer {
   -moz-transition-property: width, background-color;
   -o-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25),
+    inset 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25),
+    inset 0 1px rgba(255, 255, 255, 0.1);
 }
 
 #five:checked ~ .progress > .progress-bar {
@@ -295,6 +319,7 @@ footer {
   }
   .dropbtn {
     padding: 9px;
+    font-weight: 300;
   }
   .butonat {
     float: none;
@@ -303,8 +328,8 @@ footer {
   }
   .h3 {
     background-image: url("../Images/program.jpg");
-    background-size: cover; 
-    width: 100%; 
+    background-size: cover;
+    width: 100%;
     height: 150%;
     color: #f5c701e6;
     float: none;
@@ -314,7 +339,7 @@ footer {
   h3 {
     text-align: center;
     padding: 22% 0 0 0;
-    font-family: 'Architects Daughter', cursive;
+    font-family: "Architects Daughter", cursive;
     font-size: 1.4em;
   }
   .icons a {
@@ -327,14 +352,14 @@ footer {
   }
 
   /* progress bar */
-.container {
-  width: 70%;
-  font-size: 1.1em;
-}
-.label {
-  margin: 0;
-  padding: 0;
-}
+  .container {
+    width: 70%;
+    font-size: 1.1em;
+  }
+  .label {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 @media (min-device-width: 1025px) {

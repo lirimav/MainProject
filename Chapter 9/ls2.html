@@ -1,0 +1,40 @@
+<!-- \\\\ Lirim Avdyli //// -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- \\\\ Lirim Avdyli //// -->
+    <title>chapter 9</title>
+    <style type="text/css">
+        p { 
+            margin: 0;
+        }
+    </style>
+    <script>
+        var nr1 = window.prompt("Shkruaj numrin e pare","0");
+        var nr2 = window.prompt('Shkruaj numrin e dyte','0');
+        var nr3 = window.prompt('Shkruaj numrin e trete','0');
+
+        var vlera1= parseFloat(nr1);
+        var vlera2= parseFloat(nr2);
+        var vlera3= parseFloat(nr3);
+
+        var maxValue= maximum( vlera1, vlera2, vlera3);
+
+        document.writeln("<p>Numri i pare: " + vlera1 + 
+            "</p>" + "<p>Numri i dyte: " + vlera2 +  
+            "</p>" + "<p>Numri trete: " + vlera3 + "</p>" +
+             "<p>Maksimumi eshte: "+ maxValue +" </p>");
+
+        function maximum( x, y, z ){
+            return Math.max( x, Math.max( y, z));
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

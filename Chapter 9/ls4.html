@@ -1,0 +1,63 @@
+<!-- \\\\ Lirim Avdyli //// -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- \\\\ Lirim Avdyli //// -->
+    <title>chapter 9</title>
+    <style>
+        li {
+            display: inline;
+            margin: 10px;
+        }
+        ol {
+            margin: 0;
+        }
+    </style>
+    <script>
+        
+        var die1Image;
+        var die2Image;
+        var die3Image;
+        var die4Image;
+
+        function start(){
+            var button = document.getElementById("rollButton");
+            button.addEventListener("click", rollDice, false);
+            die1Image= document.getElementById("die1");
+            die2Image= document.getElementById("die2");
+            die3Image= document.getElementById("die3");
+            die4Image= document.getElementById("die4");
+        }
+
+        function rollDice(){
+            setImage( die1Image );
+            setImage( die2Image );
+            setImage( die3Image );
+            setImage( die4Image );
+        }
+
+        function setImage(dieImg){
+            var dieValue= Math.floor(1 + Math.random() * 6);
+            dieImg.setAttribute("src", "img/die "+ dieValue + ".png")
+            dieImg.setAttribute("alt","die image with "+ dieValue +" spot(s)");
+        }
+
+        window.addEventListener("load", start, false);
+    </script>
+</head>
+<body>
+    <form action="#">
+        <input type="button" value="Roll Dice" id="rollButton">
+    </form>
+    <ol>
+        <li><img src="img/blank.png" alt="die 1 image" id="die1"></li>
+        <li><img src="img/blank.png" alt="die 2 image" id="die2"></li>
+        <li><img src="img/blank.png" alt="die 3 image" id="die3"></li>
+        <li><img src="img/blank.png" alt="die 4 image" id="die4"></li>
+    </ol>
+    
+</body>
+</html>

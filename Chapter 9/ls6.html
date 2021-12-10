@@ -1,0 +1,151 @@
+<!-- \\\\ Lirim Avdyli //// -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- \\\\ Lirim Avdyli //// -->
+    <title>chapter 9</title>
+    <style>
+        p.red {
+            color: red;
+        }
+        img {
+            width: 54px; height: 54px;
+        }
+        div {
+            border: 5px ridge royalblue;
+            padding: 10px; width: 120px;
+            margin-bottom: 10px;
+        }
+        .point {margin:0px;}
+    </style>
+    <script>
+        // page variables
+        var pointDie1Img;
+        var pointDie2Img;
+        var rollDie1Img;
+        var rollDie2Img;
+        var messages;
+        var playButton;
+        var dicerolling;
+
+        //other variables
+        var myPoint;
+        var die1Value;
+        var die2Value;
+
+        function startGame(){
+            dicerolling=document.getElementById("dicerolling");
+            pointDie1Img= document.getElementById("pointDie1");
+            pointDie2Img= document.getElementById("pointDie2");
+            rollDie1Img= document.getElementById("rollDie1");
+            rollDie2Img= document.getElementById("rollDie2");
+            messages= document.getElementById("messages")
+            playButton= document.getElementById("play")
+            rollButton= document.getElementById("roll")
+
+            rollButton.disabled= true;
+            setImage(pointDie1Img);
+            setImage(pointDie2Img);
+            setImage(rollDie1Img);
+            setImage(rollDie2Img);
+
+            myPoint=0;
+            firstRoll();
+        }
+
+        function firstRoll(){
+            var sumOfdice= rollDice();
+            switch(sumOfdice) {
+                case 7: case 11: //win first roll
+                messages.innerHTML="You Win!!! Click Play to play again.";
+                break;
+                case 2: case 3: case 12: //lose on first roll
+                messages.innerHTML= "Sorry. You lose. Click Play to play again.";
+                break;
+                default:
+                    myPoint= sumOfdice;
+                    setImage(pointDie1Img, die1Value);
+                    setImage(pointDie2Img, die2Value);
+                    messages.innerHTML= "Roll Again!";
+                    rollButton.disabled= false;
+                    playButton.disabled= true;
+                    break;
+            }
+        }
+
+        function rollAgain(){
+            var sumOfDice = rollDice();
+            if (sumOfDice == myPoint){
+                messages.innerHTML= "You Win!!! Click Play to play again.";
+                rollButton.disabled= true;
+                playButton.disabled= false;
+            }
+            else if (sumOfDice == 7){
+                messages.innerHTML= "Sorry. You lose. Click Play to play again.";
+                rollButton.disabled= true;
+                playButton.disabled= false;
+            }
+        }
+
+        function rollDice(){
+            dicerolling.play();
+
+            die1Value= NaN;
+            die2Value= NaN;
+            showDice();
+
+            die1Value= Math.floor(1 + Math.random() * 6);
+            die2Value= Math.floor(1 + Math.random() * 6);
+            return die1Value + die2Value;
+        }
+
+        function showDice(){
+            setImage(rollDie1Img, die1Value);
+            setImage(rollDie2Img, die2Value);
+        }
+
+        function setImage(dieImg, dieValue){
+            if (isFinite(dieValue))
+            dieImg.src="img/die "+ dieValue +".png";
+            else
+                dieImg.src="img/blank.png";
+        }
+
+        function start(){
+            var playButton= document.getElementById("play");
+            playButton.addEventListener("click", startGame, false);
+            var rollButton= document.getElementById("roll");
+            rollButton.addEventListener("click", rollAgain, false);
+            var diceSound= document.getElementById("dicerolling");
+            diceSound.addEventListener("ended", showDice, false);
+        }
+        window.addEventListener("load", start, false);
+    </script>
+</head>
+<body>
+    <audio id="dicerolling" preload="auto">
+        <source src="http://soundbible.com/grab.php?id=182&type=mp3" type="audio/mpeg">
+        <source src="http://soundbible.com/grab.php?id=182&type=mp3" type="audio/mpeg">
+        Browser does not support audio tag
+    </audio>
+
+    <div id="pointDiv">
+        <p class="point">Point is:</p>
+        <img src="img/blank.png" alt="Die 1 of point value" id="pointDie1">
+        <img src="img/blank.png" alt="Die 2 of point value" id="pointDie2">
+    </div>
+    <div class="rollDiv">
+        <img src="img/blank.png" alt="Die 1 of roll value" id="rollDie1">
+        <img src="img/blank.png" alt="Die 2 of roll value" id="rollDie2">
+    </div>
+    <form action="#">
+        <input type="button" id="play" value="Play">
+        <input type="button" id="roll" value="Roll">
+    </form>
+    <p id="messages" class="red">Click Play to start the game</p>
+
+</body>
+</html>

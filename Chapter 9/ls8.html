@@ -1,0 +1,33 @@
+<!-- \\\\ Lirim Avdyli //// -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- \\\\ Lirim Avdyli //// -->
+    <title>chapter 9</title>
+    <script>
+        var output="";
+
+        function calculateFactorials(){
+            for(var i=0; i<=10; ++i)
+                output +="<p>"+ i +"!="+ factorial(i) +"</p>";
+            document.getElementById("results").innerHTML= output;
+        }
+
+        function factorial(number){
+            if(number <=1)
+            return 1;
+            else 
+            return number * factorial(number - 1);
+        }
+
+        window.addEventListener("load", calculateFactorials, false);
+    </script>
+</head>
+<body>
+    <h1>Factorials of 0 to 10</h1>
+    <div id="results"></div>
+</body>
+</html>
