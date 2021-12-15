@@ -44,6 +44,9 @@ nav {
 .sidepanel:hover {
   background-color: #b7ad80b8;
 }
+.sidepanel a:hover {
+  opacity: 0.7;
+}
 .active {
   background-color: #7c744db8;
 }
@@ -96,6 +99,9 @@ footer {
   padding: 3%;
   color: black;
   font-size: 1.1em;
+}
+.icons a:hover {
+  opacity: 0.9;
 }
 .openbtn,
 .closebtn {
