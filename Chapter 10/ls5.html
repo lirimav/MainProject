@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 10</title>
+    <script>
+        var iconImg;
+        var pictures=["die 1","die 2","GPP","GUI","PERF","PORT","SEO"];
+        var descriptons= ["Common Programing error", "Error prevention tip",
+                        "Good programming practice", "Look and feel observation",
+                        "Performance Tip", "Portability tip", "Software engineering observation"];
+        
+        function pickImage(){
+            var index= Math.floor(Math.random() * 7);
+            iconImg.setAttribute("src", pictures[index] + ".png");
+            iconImg.setAttribute("alt", desctriptions[index]);
+        }
+
+        function start(){
+            iconImg=document.getElementById("iconImg");
+            iconImg.addEventListener("click", pickImage ,false);
+        }
+        window.addEventListener("load",start,false)
+    </script>
+</head>
+<body>
+    <img src="img/die 12.png" alt="common error">
+</body>
+</html>

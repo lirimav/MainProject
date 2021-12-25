@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 10</title>
+    <script>
+        function start(){
+            var array1= [ [1,2,3], [4,5,6]];
+            var array2= [ [1,2], [3], [4,5,6]];
+
+            outputArray("Values in array1 by row",array1,
+                document.getElementById("output1"));
+            outputArray("Values in array2 by row",array2,
+                document.getElementById("output2"));
+        }
+
+        function outputArray(heading, theArray, output){
+            var results=" ";
+
+            for (var row in theArray){
+                results += "<ol>";
+
+                    for(var column in theArray[row]){
+                        results += "<li>"+ theArray[row][column]+"</li>";
+                    }
+                    results += "</ol>";
+            }
+            output.innerHTML=results;
+        }
+        window.addEventListener("load",start,false);
+    </script>
+</head>
+<body>
+    <h2>Values in array1 by row</h2>
+    <div id="output1"></div>
+    <h2>Values in array1 by row</h2>
+    <div id="output2"></div>
+</body>
+</html>

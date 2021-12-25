@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 10</title>
+    <script>
+        function start(){
+            var a=[10,1,9,2,8,3,7,4,6,5];
+
+            outputArray("Data items in original order: ",a, document.getElementById("originalArray"));
+            a.sort(compareIntegers);
+            outputArray("Data items in ascending order",a, document.getElementById("sortedArray"));
+        }
+
+        function outputArray(heading,theArray,output){
+            output.innerHTML= heading + theArray.join(" ");
+        }
+
+        function compareIntegers(value1, value2){
+            return parseInt(value1)- parseInt(value2);
+        }
+        window.addEventListener("load", start,false);
+    </script>
+</head>
+<body>
+    <h1>Sorting an Array</h1>
+    <p id="originalArray"></p>
+    <p id="sortedArray"></p>
+</body>
+</html>
