@@ -1,0 +1,60 @@
+body {
+  background-image: url(imgs/bckgrnd.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo1 {
+  margin-bottom: -83px;
+  padding-top: 5px;
+}
+h1 {
+  color: white;
+  text-shadow: 1px 1px 2px rgb(115, 86, 180), 0 0 25px blue, 0 0 5px darkblue;
+  text-align: center;
+}
+h1.h1wel, h2.h2wel {
+  background: -webkit-gradient(center, yellow, red);
+  margin-left: 380px;
+  width: 600px;
+  height: auto;
+  border: 2px solid white;
+  text-align: center;
+  border-radius: 15px;
+}
+ul.navlist {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.navlist li {
+  float: right;
+}
+
+ul.navlist li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul.navlist li a:hover {
+  background-color: #111;
+}
+.active {
+  background-color: #04aa6d;
+}
+#para {
+  width: auto;
+  height: auto;
+  border: 3px solid rgb(0, 113, 128);
+  padding: 5px 20px;
+  text-align: center;
+  background: -webkit-gradient(
+    linear, center top, center bottom,
+    color-stop(15%, white), color-stop(50%, lightsteelblue),
+    color-stop(75%, rgb(0, 113, 128))
+  );
+}
