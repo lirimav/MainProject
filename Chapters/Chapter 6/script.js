@@ -1,0 +1,36 @@
+        // 1st lesson
+        document.writeln("<h1>Welcome to Javascript Programming!</h1>");
+        // 2nd lesson
+        window.alert("Welcome to\"JavaScript\"Programming!");
+        // 3rd lesson
+        var emri; //String the name that user enters
+        emri=window.prompt("Sheno emrin tuaj ju lutem.")
+        document.writeln("<h1>Hello "+ emri + ", welcome to Javascript programming!</h1>");
+        // 4th lesson
+        var firstNumber; //String nr i par qe e jep useri
+        var secondNumber; //String nr i dyt qe e jep useri
+        var number1; firstNumber // nr1 to add
+        var number2; secondNumber //nr2 to add
+        var sum; sum // sum of nr1&nr2
+        firstNumber=window.prompt("Sheno nr e par");
+        secondNumber=window.prompt("Sheno nr e dyte");
+        number1=parseInt(firstNumber);
+        number2=parseInt(secondNumber);
+        sum=number1+number2;
+        document.writeln("<h1>The sum is "+ sum +"</h1>");
+        // 5th lesson
+        var emri; // emri i userit
+        var tash = new Date();
+        var ora = tash.getHours();
+        emri= window.prompt("Shkruaj emrin tuaj ketu")
+        if ( ora <12)
+        document.write("<h1>Good Morning, ");
+            if ( ora >=12)
+            {
+                ora=ora - 12; //konvertimi ne 12 ore
+                if (ora <6 )
+                document.write("<h1>Mire Dita, ")
+                if (ora >=6 )
+                document.write("<h1>Mire Mbrema</h1>")
+                }
+        document.writeln("<h1>"+ emri +", welcome to Javascript programming!</h1>" );

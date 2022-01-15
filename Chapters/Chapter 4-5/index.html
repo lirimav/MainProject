@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Project 1 Home</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--Header-->
+    <header id="top" class="header1">
+      <p class="logo1"><img src="imgs/+ img.jpg" alt="Logo" height="70" width="90"></p>
+      <h1 style="text-align: center;">Project1</h1>
+        <!-- Nav Bar -->
+        <nav class="navbar">
+          <ul class="navlist">
+            <li class="active" id="home"><a href="index.html" target="_blank">Home</a></li>
+            <li id="about"><a href="about.html">About</a></li>
+            <li id="assignments"><a href="assignments.html">Assignments</a></li>
+            <li id="contacts"><a href="contacts.html">Contacts</a></li>
+          </ul>
+        </nav>  
+      <time>01-11-2021</time>
+    </header>
+
+    <!-- Headings -->
+    <h1 class="h1wel">Welcome to Main Page</h1>
+    <h2 class="h2wel">Here we go</h2>
+    <a href="#table"><h3>Tables</h3></a>
+    <a href="#form"><h3>Forms</h3></a>
+
+    <!-- Paragraphs-Anchors -->
+    <div>
+      <p>
+        Every task will be completed
+        <a href="https://www.google.com"><strong>here</strong></a>
+      </p>
+    </div>
+    <p>
+      <a href="https://youtube.com"
+        ><img src="imgs/+ img.jpg" width="50" height="50" alt="Shto piket"
+      /></a>
+      <a href="https://facebook.com"
+        ><img src="imgs/- img.png" width="50" height="50" alt="Hiq piket"
+      /></a>
+    </p>
+    <address>Contact <a href="mailto:lirimav1@gmail.com">us</a></address>
+    <p id="para">
+      Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+      roots in a piece of classical Latin literature from 45 BC, making it over
+      2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+      College in Virginia, looked up one of the more obscure Latin words,
+      consectetur, from a Lorem Ipsum passage, and going through the cites of
+      the word in classical literature, discovered the undoubtable source. Lorem
+      Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
+      Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This
+      book is a treatise on the theory of ethics, very popular during the
+      Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
+      amet..", comes from a line in section 1.10.32.
+    </p>
+    <!--Meter Element-->
+    0 <meter min="0"
+             max="100"
+             value="75"></meter>100
+    <!-- Nested list -->
+    <ul>
+      <li>You will have access in:</li>
+      <ul>
+        <li>social media</li>
+        <ol>
+          <li>facebook</li>
+          <li>intagram</li>
+        </ol>
+      </ul>
+      <ul>
+        <li>mysql</li>
+        <li>database</li>
+        <li>programming</li>
+        <ol>
+          <li>html5</li>
+          <li>css</li>
+        </ol>
+      </ul>
+    </ul>
+    <h1 id="table" >Tables</h1>
+    <!-- Tables -->
+    <tableborder="1">
+      <caption>
+        <strong>Table of Fruits and their prices</strong>
+      </caption>
+
+      <thead>
+        <tr>
+          <th>Fruits</th>
+          <th>Prices</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th>Total</th>
+          <th>3.75€</th>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>Apple</td>
+          <td>0.25€</td>
+        </tr>
+        <tr>
+          <td>Orange</td>
+          <td>0.50€</td>
+        </tr>
+        <tr>
+          <td>Bananas</td>
+          <td>1.42€</td>
+        </tr>
+        <tr>
+          <td>Lemons</td>
+          <td>0.30€</td>
+        </tr>
+      </tbody>
+    </table>
+    <table border="1">
+      <thead>
+        <tr>
+          <th rowspan="3">
+            <img src="imgs/+ img.jpg" alt="+" width="205" height="167" />
+          </th>
+        </tr>
+        <tr>
+          <th colspan="4"><strong> Going up + </strong><br />Deal with It</th>
+        </tr>
+        <tr>
+          <th># of applies</th>
+          <th>Region</th>
+          <th>Data</th>
+          <th>Does it</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Njerzimi</th>
+          <td>2</td>
+          <td>America</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <th>Kafshet</th>
+          <td>5</td>
+          <td>Europe</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+      </tbody>
+    </table>
+    <h1 id="form">Forms</h1>
+    <!-- Forms -->
+    <h2>Form Feedback</h2>
+    <p>Please fill out this form</p>
+    <form action="/example.html" method="post">
+      <input type="hidden" name="HERE" value="example.html" />
+      <input type="hidden" name="subject" value="Feedback Form" />
+      <input type="hidden" name="redirect" value="about.html" />
+
+      <!--Input type text-->
+      <p>
+        <label
+          >Name:
+          <input type="text" name="name" size="25" maxlength="30" />
+        </label>
+      </p>
+      <p>
+        <!--inpu type submit-->
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Clear" />
+      </p>
+    </form>
+
+    <section>
+      <form method="post">
+        <h1>Name here</h1>
+        <label for="username">Username :</label>
+        <input type="text" name="username" id="username" />
+        <br />
+        <!--Type Password-->
+        <label for="password">Password :</label>
+        <input type="password" name="password" id="password" />
+        <br />
+        <!--Type Number-->
+        <label for="data">Data :</label>
+        <input type="number" id="data" name="data" step="1" />
+        <br />
+        <!--Type Slide-->
+        <label for="slide">Mesi :</label>
+        <input type="range" id="mesi" name="mesi" max="10" min="0" step="1" />
+        <br />
+        <!--Type Checkbox-->
+        <span>What cars do you like</span>
+        <br />
+        <input type="checkbox" name="cars" id="bmw" value="bmw" />
+        <label for="bmw">BMW</label>
+        <br />
+        <input type="checkbox" name="cars" id="VW" value="VW" />
+        <label for="VW">VW</label>
+        <br />
+        <input type="checkbox" name="cars" id="audi" value="audi" />
+        <label for="audi">Audi</label>
+        <br />
+        <!--Type Radio-->
+        <p>Sa bejne 2+2?</p>
+        <input type="radio" id="kater" name="pergjigja" value="4" />
+        <label for="kater">4</label>
+        <br />
+        <input type="radio" name="pergjigja" id="tete" value="8" />
+        <label for="tete">8</label>
+        <br />
+        <!--Type dropdown-->
+        <label for="days">Days :</label>
+        <select name="days" id="days">
+          <option value="monday">Monday</option>
+          <option value="tuesday">Tuesay</option>
+          <option value="wednesday">Wednesday</option>
+        </select>
+        <br /> <!--Type Datalist-->
+        <label for="qytet">Qyteti ideal :</label>
+        <input type="text" list="qytete" id="qytet" name="qytet" />
+
+        <datalist id="qytete">
+          <option value="Prishtina"></option>
+          <option value="Peja"></option>
+          <option value="Ferizaj"></option>
+          <option value="Gjakova"></option>
+        </datalist>
+      </form>
+    </section>
+
+    <section>
+      <h1>New HTML5 Input Types</h1>
+      <!--New HTML5 Input Types-->
+      <form action="post">
+      <!--Type Color-->
+      <label>Color:
+        <input type="color">
+      </label>
+      <br>
+      <!--Type Date-->
+      <label>Date:
+        <input type="date">
+        (dd-mm-yyyy)
+      </label>
+      <br>
+      <!--Type DateTime-->
+      <label>Date-Time:
+        <input type="datetime" />
+      </label>
+      <br>
+      <!--Type DateTime-Local-->
+      <label>DateTime-Local
+        <input type="datetime-local">
+      </label>
+      <br>
+      <!--Type Email-->
+      <label>Email:
+        <input type="email" placeholder="example@gmail.com">
+      </label>
+      <br>
+      <!--Type Month-->
+      <label>Month:
+        <input type="month">
+      </label>
+      <br>
+      <!--Type Number-->
+      <label>Number:
+        <input type="number"
+        min="0"
+        max="10"
+        step="1"
+        value="0">
+      </label>(Enter a number between 0-10)
+      <br>
+      <!--Type Range-->
+      <label>Range:
+        <input type="range"
+        min="0"
+        max="40"
+        value="20"
+        step="2">
+      </label>
+      <br>
+      <!--Type Search-->
+      <label>Search:
+        <input type="search" placeholder="Search">
+      </label>(Search Here)
+      <br>
+      <!--Type Tel-->
+      <label>Tel:
+        <input type="tel" placeholder="(###) ###-###" 
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+        required formnovalidate>
+      </label>(###) ###-###
+      <br>
+      <!--Type Time-->
+      <label>Time:
+        <input type="time">
+      </label>
+      <br>      
+      <!--Type URL-->
+      <label>URL:
+        <input type="url" placeholder="www.google.com">
+      </label>
+      <br>
+      <!--Type Week-->
+      <label>Week:
+        <input type="week">
+      </label>
+      <br>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Clear">
+    </form>
+    </section>
+    <section>
+      <h1>Autocomplete Attribute</h1>
+      <!--Autocomplete Attribute-->
+      <form action="post" autocomplete="on">
+        <label>First Name:
+          <input type="text" placeholder="First Name" id="firstname">
+        </label>
+        <br>
+        <label>Last Name:
+          <input type="text" id="lastname" placeholder="Last Name">
+        </label>
+        <br>
+        <label>Email:
+          <input type="email" placeholder="example@gmail.com" id="email">
+        </label>
+        <br>
+        <label for="txtList">Birth Month:
+          <input type="text" id="txtList"
+          placeholder="Select a Month" list="months">
+          <datalist id="months">
+            <option value="January"></option>
+            <option value="February"></option>
+            <option value="March"></option>
+            <option value="April"></option>
+            <option value="May"></option>
+            <option value="June"></option>
+            <option value="July"></option>
+            <option value="August"></option>
+          </datalist>
+        </label>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+      </form>
+    </section>
+
+    <a href="#top"><p style="text-align: center">TOP</p></a>
+
+    <footer>
+      <h6>&copy; 2018-2021 by Lirim &amp; CO<wbr>E, Inc. All Rights Reserved.</h6>
+      <address>
+        Contact <a href="maiilto:lirimav1@gmail.com">us</a>
+      </address>
+    </footer>
+  </body>
+</html>
