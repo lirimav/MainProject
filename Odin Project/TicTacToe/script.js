@@ -1,110 +1,79 @@
-let board = [
-    ['', '', ''],
-    ['', '', ''],
-    ['', '', '']
-  ];
-  
-  let players = ['X', 'O'];
-  
-  let currentPlayer;
-  let available = [];
-  
-  function setup() {
-    createCanvas(400, 400);
-    frameRate(30);
-    currentPlayer = floor(random(players.length));
-    for (let j = 0; j < 3; j++) {
-      for (let i = 0; i < 3; i++) {
-        available.push([i, j]);
-      }
-    }
-  }
-  
-  function equals3(a, b, c) {
-    return a == b && b == c && a != '';
-  }
-  
-  function checkWinner() {
-    let winner = null;
-  
-    // horizontal
-    for (let i = 0; i < 3; i++) {
-      if (equals3(board[i][0], board[i][1], board[i][2])) {
-        winner = board[i][0];
-      }
-    }
-  
-    // Vertical
-    for (let i = 0; i < 3; i++) {
-      if (equals3(board[0][i], board[1][i], board[2][i])) {
-        winner = board[0][i];
-      }
-    }
-  
-    // Diagonal
-    if (equals3(board[0][0], board[1][1], board[2][2])) {
-      winner = board[0][0];
-    }
-    if (equals3(board[2][0], board[1][1], board[0][2])) {
-      winner = board[2][0];
-    }
-  
-    if (winner == null && available.length == 0) {
-      return 'tie';
-    } else {
-      return winner;
-    }
-  }
-  
-  function nextTurn() {
-    let index = floor(random(available.length));
-    let spot = available.splice(index, 1)[0];
-    let i = spot[0];
-    let j = spot[1];
-    board[i][j] = players[currentPlayer];
-    currentPlayer = (currentPlayer + 1) % players.length;
-  }
+const cells = document.querySelectorAll(".cell");
+const statusText = document.querySelector("#statusText");
+const restartBtn = document.querySelector("#restartBtn");
+const winConditions = [
+    [0, 1 ,2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3 ,6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [0, 4, 8],
+    [2, 4, 6]
+];
+let options = ["", "", "", "", "", "", "", "", ""];
+let currentPlayer = "X";
+let running = false;
 
-  
-  function draw() {
-    background(255);
-    let w = width / 3;
-    let h = height / 3;
-    strokeWeight(4);
-  
-    line(w, 0, w, height);
-    line(w * 2, 0, w * 2, height);
-    line(0, h, width, h);
-    line(0, h * 2, width, h * 2);
-  
-    for (let j = 0; j < 3; j++) {
-      for (let i = 0; i < 3; i++) {
-        let x = w * i + w / 2;
-        let y = h * j + h / 2;
-        let spot = board[i][j];
-        textSize(32);
-        let r = w / 4;
-        if (spot == players[1]) {
-          noFill();
-          ellipse(x, y, r * 2);
-        } else if (spot == players[0]) {
-          line(x - r, y - r, x + r, y + r);
-          line(x + r, y - r, x - r, y + r);
+initializeGame();
+
+function initializeGame(){
+    cells.forEach(cell => cell.addEventListener("click", cellClicked));
+    restartBtn.addEventListener("click", restartGame);
+    statusText.textContent = `${currentPlayer}'s turn`;
+    running = true;
+}
+function cellClicked(){
+    const cellIndex = this.getAttribute("cellIndex");
+
+    if(options[cellIndex] != "" || !running){
+        return;
+    }
+
+    updateCell(this, cellIndex);
+    checkWinner();
+}
+function updateCell(cell, index){
+    options[index] = currentPlayer;
+    cell.textContent = currentPlayer;
+}
+function changePlayer(){
+    currentPlayer = (currentPlayer == "X") ? "O" : "X";
+    statusText.textContent = `${currentPlayer}'s turn`;
+}
+function checkWinner(){
+    let roundWon = false;
+
+    for(let i = 0; i < winConditions.length; i++){
+        const condition = winConditions[i]
+        const cellA = options[condition[0]];
+        const cellB = options[condition[1]];
+        const cellC = options[condition[2]];
+
+        if(cellA == "" || cellB == "" || cellC == ""){
+            continue;
         }
-      }
+        if(cellA == cellB && cellB == cellC){
+            roundWon = true;
+            break;
+        }
     }
-  
-    let result = checkWinner();
-    if (result != null) {
-      noLoop();
-      let resultP = createP('');
-      resultP.style('font-size', '32pt');
-      if (result == 'tie') {
-        resultP.html('Tie!');
-      } else {
-        resultP.html(`${result} wins!`);
-      }
-    } else {
-      nextTurn();
+    if(roundWon == true || options == ""){
+        statusText.textContent = `${currentPlayer} wins!`;
+        options = "/";
     }
-  }
+    else if(!options.includes("")){
+        statusText.textContent = `Draw!`;
+    }
+    else{
+        changePlayer();
+    }
+}
+function restartGame(){
+    currentPlayer = "X";
+    options = ["", "", "", "", "", "", "", "", ""];
+    statusText.textContent = `${currentPlayer}'s turn`;
+    cells.forEach(cell => cell.textContent = "");
+    running = true;
+}

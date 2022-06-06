@@ -35,3 +35,4 @@ function update(){
         return time.length < 2 ? "0" + time : time;
     }
 }
+

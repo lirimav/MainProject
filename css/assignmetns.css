@@ -141,9 +141,18 @@ footer {
   padding: 3%;
   color: black;
   font-size: 1.1em;
+  text-shadow: #615a00 -2px 4px 5px;
 }
 .icons a:hover {
   opacity: 0.9;
+}
+a:hover .fa{
+  transition: 500ms;
+  transform: scale(1.2);
+}
+a .fa{
+  transition: 600ms;
+  transform: scale(1);
 }
 .openbtn,
 .closebtn {
