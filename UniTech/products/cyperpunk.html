@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Products</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/style.css'>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="../images/logo.png" alt="logo" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <label for="searchbar"><i class="fas fa-search" for="searchbar"></i></label>
+                    <input type="text" name="searchbar" placeholder="Search.." id="searchbar">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../products.html">Products</a></li>
+                    <li><a href="../kontakti.php">Contact</a></li>
+                    <li><a href="../account.php">Account</a></li>
+                </ul>
+            </nav>
+            <a href=../cart.html> <img src="../images/cart.png" width="30px" height="30px" alt="addtocart"></a>
+            <img src="../images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    <!-- produkt detajet -->
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="../images/produkti2.jpg" width="100%" id="ProductImg">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="../images/produkti2.2.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="../images/produkti2.jpg" 100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <p>Gaming PC</p>
+                <h1>CyberPowerPC Gamer Xtreme Gaming Desktop</h1>
+                <h4>$1,169
+                </h4>
+                <select>
+                    <option>Select case color</option>
+                    <option>White</option>
+                    <option>Silver</option>
+                    <option>Black</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn">Add To Cart</a>
+
+                <h3>Product Details</h3>
+                <p>
+                    Trounce your opponents on the virtual battlefield with this CyberPowerPC Gamer Xtreme gaming
+                    desktop. The NVIDIA GeForce RTX 2060 graphics card powers through most demanding games, while the
+                    Intel Core i5 processor and 16GB of RAM run high-end titles smoothly. This CyberPowerPC Gamer Xtreme
+                    gaming desktop has a 500GB SSD for swift OS boots and ample space for your collection.</p>
+            </div>
+        </div>
+    </div>
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <p>View More</p>
+        </div>
+    </div>
+
+
+
+    <div class="small-container">
+
+        <div class="row">
+            <div class="col-4">
+                <a href="../cyperpunk.html"> <img src="../images/produkti2.jpg"></a>
+
+                <h4>CyberPowerPC Gamer Xtreme Gaming Desktop</h4>
+                <div class="rating">
+                </div>
+                <p>$1,169</p>
+            </div>
+            <div class="col-4">
+                <a href="../monitor1.html"><img src="../images/monitori2.jpg"></a>
+                <h4>Dell - Gaming 32"</h4>
+                <div class="rating">
+                </div>
+                <p>$329.99</p>
+            </div>
+
+            <div class="col-4">
+                <a href="../monitor2.html"><img src="../images/monitor1.jpg"></a>
+                <h4>Samsung - 27” Odyssey Gaming
+                </h4>
+                <div class="rating">
+                </div>
+                <p>$279.99</p>
+            </div>
+
+            <div class="col-4">
+                <a href="../product-details.html"><img src="../images/Produkti1.jpg"></a>
+                <h4>CyberPowerPC Gamer Xtreme Gaming Desktop</h4>
+                <div class="rating">
+                </div>
+                <p>$1,169</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- footer -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Contact us</h3>
+
+                    <a href="mailto:supportteam@unitech.org">supportteam@unitech.org</a>
+                </div>
+                <div class="footer-col-2">
+                    <img src="../images/logowhite.png">
+
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <div class="social">
+                        <a href="https://www.facebook.com">Facebook</a>
+                        <a href="https://www.instagram.com">Instagram</a>
+                        <a href="https://www.twitter.com">Twitter</a>
+                        <a href="https://www.youtube.com">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - UniTech/TicketsOnline</p>
+        </div>
+    </div>
+
+    <!-- js for menu -->
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img")
+
+        SmallImg[0].onclick = function () {
+            ProductImg.src = SmallImg[0].src;
+        }
+
+        SmallImg[1].onclick = function () {
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function () {
+            ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function () {
+            ProductImg.src = SmallImg[3].src;
+        }
+    </script>
+
+</body>
+
+</html>
