@@ -5,6 +5,16 @@
 body {
   font-family: system-ui;
   background: black;
+  opacity: 0;
+  transition: all 1.3s;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+body.loaded {
+  opacity: 1;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 #myVideo {
   width: 100vw;
