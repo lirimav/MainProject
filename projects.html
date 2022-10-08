@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/projects.css" />
+  <link rel="icon" type="image/x-icon" href="Images/logo.png">
+  <title>Projects</title>
+</head>
+
+<body>
+  <video autoplay muted loop playsinline id="myVideo">
+    <source src="Images/video.mp4" type="video/mp4">
+  </video>
+  <header>
+    <img src="Images/logo.png" alt="Logo" width="70" height="70" class="logo" />
+    <!-- NavBar  --  SidePanel -->
+    <nav class="navbar">
+      <button class="openbtn" onclick="openNav()">☰</button>
+      <div id="mySidepanel" class="sidepanel">
+        <a style="color: white;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">✖</a>
+        <a href="contact.html">Contact</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="about.html">About</a>
+        <a href="index.html">Home</a>
+      </div>
+    </nav>
+  </header>
+  <section class="sec1">
+    <h1 class="assign">Projects</h1>
+    <center>
+      <div class="butonat">
+        <!-- Projects -->
+        <div class="dropdown">
+          <button class="dropbtn">Games/Programs</button>
+          <div class="dropdown-content">
+            <a href="Projects/RockPaperScissors/index.html">Rock Paper Scissors</a>
+            <a href="Projects/TicTacToe/index.html">TicTacToe</a>
+            <a href="Projects/Battleship Project/index.html">Battleship Project</a>
+            <a href="Projects/etch a sketch/index.html">Etch a Sketch</a>
+            <a href="Projects/To Do List/index.html">To Do List</a>
+            <a href="Projects/Library Project/index.html">Library Project</a>
+            <a href="Projects/Calculator/index.html">Calculator</a>
+            <a href="Projects/Restaurant Page/dist/index.html">Restaurant Page</a>
+            <a href="Projects/Weather App/index.html">Weather App</a>
+          </div>
+        </div>
+        <!-- Projects -->
+        <div class="dropdown">
+          <button class="dropbtn">Projects</button>
+          <div class="dropdown-content">
+            <a href="Student Bio Website/index.html">Bio Website</a>
+            <a href="Bootstrap Hobby_Organization Website/index.html">Bootstrap Hobby_Organization Website</a>
+            <a href="UniTech/index.html">E-Commerce UniTech</a>
+          </div>
+        </div>
+      </div>
+    </center>
+    <center>
+      <div class="h3">
+        <h3>Here you can find all of my Projects.</h3>
+      </div>
+    </center>
+  </section>
+  <div class="container">
+    <input type="radio" class="radio" name="progress" value="five" id="five">
+    <label for="five" class="label">5%</label>
+
+    <input type="radio" class="radio" name="progress" value="twentyfive" id="twentyfive">
+    <label for="twentyfive" class="label">25%</label>
+
+    <input type="radio" class="radio" name="progress" value="fifty" id="fifty">
+    <label for="fifty" class="label">50%</label>
+
+    <input type="radio" class="radio" name="progress" value="seventyfive" id="seventyfive" checked>
+    <label for="seventyfive" class="label">75%</label>
+
+    <input type="radio" class="radio" name="progress" value="onehundred" id="onehundred">
+    <label for="onehundred" class="label">100%</label>
+
+    <div class="progress">
+      <div class="progress-bar"></div>
+    </div>
+  </div>
+  <footer>
+    <!-- Social Media -->
+    <div class="icons">
+      <a href="https://www.facebook.com/lirim.av" target="_blank"><i class="fa fa-facebook"> Facebook</i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"> Instagram</i></a>
+      <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"> Twitter</i></a>
+      <a href="mailto:la60874@universum-ks.org"><i class="fa fa-envelope"> Email</i></a>
+    </div>
+  </footer>
+
+  <!-- Hamburger Menu Script -->
+  <script>
+    function openNav() {
+      document.getElementById("mySidepanel").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidepanel").style.width = "0";
+    }
+  </script>
+  <script src="js/js.js"></script>
+</body>
+
+</html>
